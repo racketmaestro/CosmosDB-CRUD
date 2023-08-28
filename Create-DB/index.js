@@ -1,6 +1,6 @@
 
 const { CosmosClient } = require("@azure/cosmos");
-
+// Configure COSMOS_ENDPOINT and COSMOS_KEY in the function app configuration page
 const endpoint = process.env.COSMOS_ENDPOINT;
 const key = process.env.COSMOS_KEY;
 const client = new CosmosClient({ endpoint, key });
